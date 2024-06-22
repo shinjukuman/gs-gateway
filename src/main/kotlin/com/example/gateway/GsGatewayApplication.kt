@@ -17,7 +17,7 @@ class GsGatewayApplication {
                     .filters { f -> f.addRequestHeader("hello", "world") }
                     .uri("http://httpbin.org:80")
             }
-            .route { p ->
+            .route("circuitbreaker_route") { p ->
                 p.host("*.circuitbreaker.com")
                     .filters { f ->
                         f.circuitBreaker { config ->

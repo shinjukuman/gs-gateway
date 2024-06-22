@@ -2,7 +2,7 @@ package com.example.gateway.properties
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 
-@ConfigurationProperties
+@ConfigurationProperties(prefix = "uri")
 class UriProperties {
-    var httpbin: String = "http://httpbin.org:80"
+    lateinit var httpbin: String
 }

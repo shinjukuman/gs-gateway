@@ -5,3 +5,6 @@ logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.web.reactive.function.server: DEBUG
+
+uri:
+  httpbin: http://httpbin.org:80
